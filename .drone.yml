@@ -1,0 +1,4 @@
+image: bradrydzewski/java:oraclejdk8
+
+script:
+  - ./gradlew build
