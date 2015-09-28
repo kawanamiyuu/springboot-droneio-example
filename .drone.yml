@@ -1,4 +1,4 @@
-image: bradrydzewski/java:oraclejdk8
+image: oraclejdk8-custom
 
 script:
   - ./gradlew build
