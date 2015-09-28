@@ -1,4 +1,10 @@
-# custom /root/.gitconfig
+#image: bradrydzewski/java:oraclejdk8
+# /root/.gitconfig に
+# --------------------------
+# [url "https://"]
+#   insteadOf = git://
+# --------------------------
+# を追加
 image: oraclejdk8-custom
 
 script:
