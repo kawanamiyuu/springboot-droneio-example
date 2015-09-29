@@ -21,10 +21,10 @@ wget downloads.drone.io/master/drone.deb
 dpkg --install drone.deb
 pkill -f droned
 
-# docker pull bradrydzewski/ubuntu
-# docker pull bradrydzewski/base
+docker pull bradrydzewski/ubuntu
+docker pull bradrydzewski/base
 
-# droned --config=/vagrant/drone.toml
+droned --config=/vagrant/drone.toml
 
   EOT
 
