@@ -15,12 +15,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :shell, inline: <<-EOT
 
-apt-get install -y libsqlite3-dev docker.io
+apt-get install -y libsqlite3-dev
+curl -sSL https://get.docker.com/ | bash
 wget downloads.drone.io/master/drone.deb
 dpkg --install drone.deb
+pkill -f droned
 
-docker pull bradrydzewski/ubuntu
-docker pull bradrydzewski/base
+# docker pull bradrydzewski/ubuntu
+# docker pull bradrydzewski/base
 
 # droned --config=/vagrant/drone.toml
 
